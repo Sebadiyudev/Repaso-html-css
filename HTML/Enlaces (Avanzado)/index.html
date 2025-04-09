@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Textarea</title>
+    </head>
+    <body>
+        <form class="form">
+            <h2 class="form_title">Formulario de contacto</h2>
+            <!--Hay dos formas de usar el label-->
+            <!--La primera es poner al input en el interior como hijo-->
+            <div class="form_input">
+                <label
+                    >Nombre Completo
+                    <input type="text" placeholder="Sebastian Ejemplo" />
+                </label>
+            </div>
+            <!--La segunda es darle un id al input y enlazar ese id con la propiedad "for" del label-->
+
+            <div class="form_input">
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="ejemplo@gmail.com"
+                />
+            </div>
+
+            <div class="form_input">
+                <label
+                    ><a href="terms.html" target="_blank"
+                        >Acepto los terminos y condiciones</a
+                    >
+                    <input class="checkbox" type="checkbox" />
+                </label>
+            </div>
+        </form>
+    </body>
+</html>

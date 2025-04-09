@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>picture, source and media</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <picture>
+            <source srcset="messi.webp " type="image/webp" />
+            <source media="(max-width:400px)" srcset="messi-small.png" />
+            <source media="(max-width:600px)" srcset="messi-medium.png" />
+            <img src="messi.png" />
+        </picture>
+        <!--La etiqueta picture es utilizada cuando hay imagenes de alta resolucion, y funciona igual que srcset y sizes-->
+        <!--las etiquetas source son condicionantes que debe cumplir para que se muestren, si el navegador no soporta webp pasa al siguiente, si la pantalla del navegador es mas grande que 400px pasa al siguiente, si es mas grande que 600px tambien la saltea y muestra la etiqueta img directamente -->
+    </body>
+</html>

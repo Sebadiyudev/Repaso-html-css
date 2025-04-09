@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>atributos srcset and sizes</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="flex-container">
+            <img
+                src="messi.png"
+                srcset="messi-small.png 360w, messi-medium.png 600w, messi.png 1000w "
+                sizes="(max-width:400px) 300px,
+                
+                (max-width:600px) 500px, 900px"
+            />
+            <!--SRCSET: Permite cargar las distintas imagenes con sus respectivas resoluciones, asi el navegador selecciona qué imagen cargar dependiendo de la resolucion de pantalla-->
+            <!--SIZES: son condiciones que se utilizan para responsive, como las mediaqueries. Si la pantalla tiene como maximo 400px, carga la imagen de 300, si la pantalla tiene como maximo 600px, carga la imagen de 500px, si la pantalla es mayor a 600px, carga la imagen de 900px  -->
+        </div>
+    </body>
+</html>

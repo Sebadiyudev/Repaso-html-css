@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+}
+p {
+    overflow: hidden;
+    font-size: 30px;
+}
+img {
+    width: 100%;
+}

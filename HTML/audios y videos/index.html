@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>audios y videos</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Audios y videos</h1>
+        <video
+            loop
+            controls
+            autoplay
+            muted
+            src="video.mp4"
+            alt="video seleccion argentina"
+        >
+            <track
+                src=""
+                default
+                kind="subtitles"
+                srclang="es"
+                label="Español/Latinoamerica"
+            />
+            <!--Etiqueta para colocar subtitulos a los videos -->
+        </video>
+        <!--
+        controls para que muestre el panel de control, autoplay para reproducir automaticamente el video, y muted para reproducir el video si se hace cambios o actualiza la pag, (sin sonido)-->
+        <audio src="audio.ogg"></audio>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML semantico y accesibilidad web</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!--Estructura semantica html correcta -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Options</a></li>
+                    <li><a href="#">Options</a></li>
+                    <li><a href="#">Options</a></li>
+                    <li><a href="#">Options</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article aria-label="Noticia periodistica">
+                    <img src="#" alt="Descripcion de la imagen" />
+                </article>
+                <!--Para la accesibilidad web siempre utilizar los atributos aria-label o alt para hacer una mini descripcion del elemento si este ya no esta indicado en su contenido, asi cuando se hace focus con la tecla TAB los narradores de pantalla lo pueden leer -->
+            </section>
+        </main>
+        <section></section>
+        <aside></aside>
+        <footer></footer>
+        <!--Estructura semantica html correcta -->
+    </body>
+</html>
