@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sidebar Menu</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <aside class="sidebar">
+            <form class="sidebar__form">
+                <input type="checkbox" id="open-menu" />
+                <label class="material-symbols-outlined" for="open-menu"
+                    >close</label
+                >
+            </form>
+            <picture class="sidebar__picture">
+                <source
+                    srcset="img/icon-100px.png"
+                    media="(max-width:57.5rem)"
+                />
+                <img src="img/icon-200px.png" alt="" />
+            </picture>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <span class="material-symbols-outlined"
+                            >Notifications</span
+                        ><a href="#">Notifications</a>
+                    </li>
+
+                    <li class="sidebar__item">
+                        <span class="material-symbols-outlined">Mail</span
+                        ><a href="#">Messages</a>
+                    </li>
+
+                    <li class="sidebar__item">
+                        <span class="material-symbols-outlined"
+                            >shopping_cart</span
+                        ><a href="#">Cart</a>
+                    </li>
+
+                    <li class="sidebar__item">
+                        <span class="material-symbols-outlined"
+                            >account_balance</span
+                        ><a href="#">Balance</a>
+                    </li>
+
+                    <li class="sidebar__item">
+                        <span class="material-symbols-outlined">settings</span
+                        ><a href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__profile">
+                <ul>
+                    <li class="sidebar__item item-profile">
+                        <img src="img/messi-128px.png" alt="messi" /><span
+                            class="profile-option"
+                            >Profile</span
+                        >
+                    </li>
+                    <li class="sidebar__item ">
+                        <span class="material-symbols-outlined">logout</span>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </body>
+</html>
