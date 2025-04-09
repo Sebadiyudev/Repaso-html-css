@@ -1,0 +1,69 @@
+/*Propiedad Display*/
+
+body {
+    margin: 0;
+}
+/* div {
+    padding: 20px;
+    background-color: #999;
+} */
+
+/* a {
+    color: white;
+    background-color: rgb(64, 103, 90);
+    display: block;
+    border: 1px solid #000;
+    opacity: 0.6;
+    margin: 20px;
+    padding: 20px;
+} */
+
+/*La etiqueta a es inline por defecto*/
+
+/*Los elementos inline ocupan el ancho correspondiente a su contenido (El siguiente elemento se posiciona al lado)*/
+/*Los elementos block ocupan todo el ancho de la pantalla (El siguiente elemento se posiciona abajo)*/
+
+/*margin y padding funciona solo horizontalmente*/
+/*verticalmente se superponen*/
+/* p {
+    background-color: #000;
+    color: #fff;
+    display: inline;
+    margin: 5px;
+    padding: 10px;
+} */
+
+.nav {
+    background-color: #48e;
+}
+
+.nav__list {
+    margin: 0;
+}
+.nav__item {
+    display: inline-block;
+    padding: 10px;
+    background-color: #48e;
+}
+/* Los elementos con Display inline-block ocupan la linea, no inician una nueva, como los elementos en linea, pero mantiene las propiedades de los elementos en block, pudiendo darles margin o padding, width o height*/
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #48e;
+}
+
+.nav__link--button {
+    border: 1px solid white;
+    background-color: white;
+    padding: 6px 12px;
+    color: #48e;
+    border-radius: 3px;
+}
+.nav__link--button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+/*display none no ocupa espacio en la pagina, tampoco se representa visualmente y los demas elementos se comportan como no existiera  */

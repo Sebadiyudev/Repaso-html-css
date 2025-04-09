@@ -1,0 +1,51 @@
+/*BASIS, SHRINK AND GROW*/
+/*Propiedades que se le dan a los hijos directos*/
+div,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.flexbox {
+    margin: 20px;
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-item {
+    width: 200px;
+    background-color: rgb(228, 8, 8);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    flex-grow: 1;
+    /*GROW por defecto su valor es 0*/
+    /*Permite ocupar el spacio disponible entre elementos y reasignarlos segundo el valor que les demos a cada elemento*/
+    flex-shrink: 0;
+    /*SRHINK determina la capacidad para encogerce*/
+    /*por defecto es 1, no se encogen*/
+    /*si le damos valores iguales a todos los elementos se encogen lo mismo a la vez, si le damos por ejemplo valor 3 a un elemento */
+    /*Si esta activo wrap no funciona y se tira para abajo*/
+    flex-basis: 170px;
+    /*Por defecto es auto*/
+    /*Establece un valor minimo base al cual el elemento no puede achicarse mas*/
+    /*Preferible activar wrap para que los elementos se tiren para abajo si la resolucion se achica*/
+    flex: 0 1 auto;
+    /*Shorthand de las anteriores, GROW SRHINK Y BASIS*/
+}
+
+.flex-item.flex-item:first-child {
+    background-color: rgb(69, 94, 175);
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.flex-item.flex-item:last-child {
+    background-color: rgb(59, 206, 78);
+    flex-grow: 1;
+    flex-shrink: 0;
+}

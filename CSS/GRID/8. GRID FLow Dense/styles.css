@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+
+.grid {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    /*En la generacion de celdas de diferentes tamaños puede suceder que un elemento no quepa en una columna o fila y automaticamente se desplace a la siguiente, dejando el espacio en blanco. El valor DENSE resuelve este problema intercambiando de lugar los elementos para que no se generen los espacios vacios*/
+    min-height: 100vh;
+
+    gap: 10px;
+}
+
+.grid-item:nth-child(10) {
+    grid-column: span 3;
+}
+
+.grid-item {
+    background-image: url(messi.webp);
+    background-position: top;
+    background-size: cover;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

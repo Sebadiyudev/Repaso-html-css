@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(1, 150px);
+    gap: 10px;
+    padding: 10px;
+    height: 350px;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-items: stretch;
+    /*Alinea los elementos de forma horizontal dentro de su propia celda en la grilla */
+    /*Por defecto Stretch*/
+    justify-content: space-evenly;
+    /*Permite alinear de forma horizontal las celdas de la grilla dentro del contenedor*/
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 10px;
+    height: 500px;
+    border: 2px solid #000;
+    margin: 20px;
+    align-items: center;
+    /*Alinea los elementos de forma vertical dentro de su celda*/
+    /*Por defecto stretch*/
+    align-content: space-evenly;
+    /*Alinea de forma vertical las celdas de la grilla respecto al contenedor*/
+}
+.grid-item:first-child {
+    background-color: #c46b6b;
+    justify-self: stretch;
+    /*self alinea el elemento independientemente a los otros*/
+    align-self: start;
+    /*Alinea el elemento indicado verticalmente*/
+}
+.grid-item2:first-child {
+    background-color: #c46b6b;
+    justify-self: stretch;
+    /*self alinea el elemento independientemente a los otros*/
+    align-self: center;
+    /*Alinea el elemento indicado verticalmente*/
+}
+
+.grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+.grid-item2 {
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}

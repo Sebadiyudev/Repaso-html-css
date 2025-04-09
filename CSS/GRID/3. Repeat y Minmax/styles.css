@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*----Repeat----*/
+
+.grid-repeat {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr 2fr) 300px;
+    /*La funcion repeat() recibe como primero argumento la cantidad de veces que se va a repetir el valor, y como segundo el valor, puede ser uno o varios*/
+    /*Tambien se puede combinar con otros valores (como 300px seguidos de repeat)*/
+    grid-template-rows: 300px;
+}
+
+.grid-item1 {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+/*----Minmax----*/
+
+.grid-minmax {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, 300px));
+    /*Minmax, recibe dos valores,el minimo y el maximo que va a ocupar cada item*/
+    /*Se puede combinar con repeat para crear patrones flexibles*/
+}
+
+.grid-item2 {
+    background-color: #a22;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+}
+.box {
+    background-color: #10232f;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    filter: blur(1px);
+    /*Blur: Desenfoque, Se aplica a la caja y a todos los elementos hijos*/
+}
+.messi {
+    width: 300px;
+    filter: brightness(1.5);
+    /*Brightness: Brillo, Por defecto 1, si es menos se oscurece y si es mas se aclara*/
+    /*Contrast, por defecto 1*/
+    /*Grayscale, convierte en escala de grises*/
+    /*Saturate, por defecto 1 */
+    /*Inverter, invierte los colores, por defecto 0*/
+    /*Sepia, por defecto 0*/
+    object-fit: cover;
+}
+.logo {
+    position: relative;
+    left: -150px;
+    backdrop-filter: blur(10px);
+    /*La propiedad BACKDROP-FILTER a diferencia de FILTER, aplica los cambios al fondo del elemento, ya sea al background propio o lo que tenga por detras.*/
+}

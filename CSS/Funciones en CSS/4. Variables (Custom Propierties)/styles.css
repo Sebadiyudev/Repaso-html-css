@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+    --color-principal: #48e;
+}
+.box {
+    --color-principal: #f44;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 500px;
+    border: 2px solid #000;
+    margin: auto;
+    font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h1 {
+    text-align: center;
+}
+
+.box:first-child {
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+.box:nth-child(3) {
+    background-color: var(--color-principal);
+}
+body > p {
+    color: var(--color-principal);
+    /*La Variable color principal es tomada del body, ya que la que esta en el elemento box sirve para ese entorno solamente, */
+    font-size: 30px;
+}

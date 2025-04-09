@@ -1,0 +1,46 @@
+/*GAP and Align-self*/
+
+div,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.flexbox {
+    margin: 20px;
+    display: flex;
+    border: 2px solid #000;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 400px;
+    /*Permite la separacion por igual entre elementos hijos */
+    /*Se aplica al contenedor*/
+}
+
+.flex-item {
+    width: 120px;
+
+    background-color: rgb(228, 8, 8);
+    color: white;
+    font-size: 4ch;
+    text-align: center;
+    flex: 1 0 180px;
+}
+.item-5 {
+    align-self: stretch;
+    /*ALIGN-SELF se aplica al hijo, agarra un elemento en particular y llevarlo donde querramos dentro de la linea, debe estar declarada la propiedad align-items tambien*/
+    /*Por defecto es auto*/
+}
+
+.flex-item.flex-item:first-child {
+    background-color: rgb(69, 94, 175);
+}
+.flex-item.flex-item:nth-child(2n) {
+    background-color: rgb(141, 128, 43);
+}
+.flex-item.flex-item:last-child {
+    background-color: rgb(93, 208, 108);
+    align-self: stretch;
+}

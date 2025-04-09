@@ -1,0 +1,17 @@
+body {
+    color: blue;
+    font-family: sans-serif;
+    background-color: #333;
+}
+
+p {
+    color: brown;
+}
+
+h1 {
+    color: inherit;
+    /*en este caso color tiene por defecto inherit para que herede las propiedades del padre, pero otras propiedades, como width no*/
+    color: initial;
+    /*valor incial que viene por defecto sin herendar las propiedades del padre */
+    font-family: initial;
+}

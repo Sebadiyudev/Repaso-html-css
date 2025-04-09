@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    background-color: bisque;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+}
+
+.gradients {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+.lineal {
+    /* background: linear-gradient(transparent, #000);
+    background: linear-gradient(#000, transparent); */
+    background: linear-gradient(to right, transparent, #000);
+    /* background: linear-gradient(to left, transparent, #000); */
+    /* background: linear-gradient(transparent, 80%, #000); */
+}
+.radial {
+    /* background: radial-gradient(transparent, #000);
+    background: radial-gradient(#000, 80%, transparent); */
+    background: radial-gradient(#000, transparent);
+}
+.conic {
+    /* background: conic-gradient(transparent, #000); */
+    background: conic-gradient(#000, transparent);
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}

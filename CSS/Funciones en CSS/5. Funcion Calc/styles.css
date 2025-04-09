@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    border: 2px solid #000;
+    width: 100%;
+    margin: auto;
+    width: calc(100% - 50px);
+    /*La Funcion CALC realiza operaciones aritmeticas, sumar restar multiplicar y dividir*/
+    /*Muy util para utilizar con medidas absolutas y relativas*/
+}
+
+.box:first-child {
+    height: 200px;
+}
+
+.box:nth-child(2) {
+    height: calc(100vh - 200px);
+    /*Aca se le resta la primer caja a la segunda, asi siempre ocupa el total de la pantalla independientemente su tamaño*/
+}

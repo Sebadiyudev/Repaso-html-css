@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.grid {
+    display: grid;
+    /*GRID automaticamente vuelve filas a los elementos hijos, dentro del contenedor*/
+    grid-template-columns: 60px 200px 300px;
+    /*cada valor crea e indica el tamaño de la columna*/
+    /*Podemos verlo como columns define el width de las columnas*/
+    grid-template-rows: 100px 200px;
+    /*cada valor crea e indica el tamaño de la fila, si no se especifica dicha fila, se adapta al contenido.*/
+    /*Podemos verlo como rows define el height de las filas*/
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

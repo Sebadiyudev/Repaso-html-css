@@ -1,0 +1,48 @@
+/*Alineacion*/
+
+div,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.flexbox {
+    margin: 20px;
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /*Alinea los elementos en el eje principal*/
+    /*START por defecto, en direccion del texto*/
+    /*END al final del eje*/
+    /*CENTER alinea al centro*/
+    /*SPACE-BETWEEN ubica al primer elemento al principio del eje y al ultimo al final, los restantes los distribuye en el centro*/
+    /*SPACE-AROUND hace que cada elemento tenga una separacion igual, pero los espacios de cada elemento no se superponen*/
+    /*SPACE-EVENLY deja todos los elementos iguales entre si y entre los bordes*/
+    height: 400px;
+    align-items: stretch;
+    /*STRETCH por defecto, los alinea al comienzo y si no tienen un tamaño definido, los items se estiran para llenar el contenedor*/
+    /*START igual que stretch pero no estira los elementos*/
+    /*END los posiciona al final*/
+    /*CENTER los alinea al centro*/
+    /*BASELINE, se alinea en la direccion del texto, trata de mantener el centro en el interlineado*/
+    align-content: space-around;
+    /*Funciona igual a JUSTIFY-CONTENT pero en el eje cruzaba y es ideal cuando hay multiples lineas de elementos, a diferencia de ALIGN-ITEMS que es mejor cuando hay una sola linea en el eje cruzado */
+}
+
+.flex-item {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(228, 8, 8);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item.flex-item:first-child {
+    background-color: rgb(69, 94, 175);
+}
+.flex-item.flex-item:last-child {
+    background-color: rgb(59, 206, 78);
+}

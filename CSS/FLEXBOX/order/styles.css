@@ -1,0 +1,39 @@
+/*ORDER*/
+/*La propiedad Order Ordena los elementos visualmente, pero mantiene su posicion original en el DOM*/
+
+div,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.flexbox {
+    margin: 20px;
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 400px;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.flex-item.flex-item:first-child {
+    background-color: rgb(69, 94, 175);
+    order: 1;
+    /*Order por defecto valor 0*/
+}
+.flex-item {
+    width: 120px;
+    height: 60px;
+    background-color: rgb(228, 8, 8);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    order: 2;
+}
+.flex-item.flex-item:last-child {
+    background-color: rgb(59, 206, 78);
+    order: 3;
+}

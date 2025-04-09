@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+
+.grid-auto-fit {
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*Minimo: 150px, Maximo: las fracciones en la que puede dividirse la pantalla ajustandose y respetando el tamaño minimo */
+    /*Auto fit: checkea el tamaño del contenedor adaptando los elementos a a medida que la resolucion cambie, si hace falta agregar o quitar columnas lo hace ajustando los elementos */
+
+    gap: 10px;
+}
+
+.grid-item1 {
+    background-color: #48e;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    max-width: 100%;
+}
+
+.grid-auto-fill {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /*AUTO-FILL rellena con celdas nuevas(indicando el tamaño, ya sean filas o columnas) aun sin elementos, dejando el espacio vacio*/
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+}
+
+.grid-item2 {
+    background-color: #a22;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

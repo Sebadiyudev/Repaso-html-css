@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: rgb(86, 157, 220);
+    color: white;
+}
+.header {
+    min-height: 100vh;
+
+    background-image: url(./background-image.webp);
+    background-size: cover;
+
+    display: flex;
+}
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(73, 150, 218, 0.5);
+    position: absolute;
+    z-index: 1;
+}
+.header-img {
+    min-width: 200px;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 20px;
+}
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.6em;
+    text-wrap: balance;
+}
+
+/*NAVBAR SECTION*/
+
+.nav {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+}
+.nav__ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav__item {
+    list-style: none;
+}
+.nav__ul-container {
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav__img-container {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav__link {
+    color: rgb(86, 157, 220);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 0;
+
+    margin: 2px;
+    transition: background-color 0.3s, border-radius 0.2s;
+    outline: 0;
+    outline-offset: 0;
+}
+.nav__link:hover {
+    background-color: rgb(214, 223, 230);
+    border-radius: 20px;
+    outline: 2px solid rgba(86, 158, 220, 0.692);
+    outline-offset: -7px;
+}
+.link--login {
+    background-color: rgb(86, 157, 220);
+    padding: 8px 24px;
+    margin-left: 6px;
+    color: white;
+    border-radius: 20px;
+}
+.link--login:hover {
+    background-color: rgb(139, 176, 208);
+    outline: none;
+}
+
+.nav__logo {
+    width: 70px;
+    border-radius: 50%;
+}

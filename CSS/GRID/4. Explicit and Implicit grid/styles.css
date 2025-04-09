@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/*Cuando hay elementos que no tiene su tamaño definido (por ejemplo hay 11 items pero 3 columnas y 3 filas definidas solamente) grid trata los restas como filas y los ubica de ese modo*/
+
+/*--------*/
+.grid {
+    /*----GRID Explicito(celdas definidas)----*/
+    display: grid;
+    grid-template-columns: 200px 300px 100px;
+    grid-template-rows: 150px 200px 250px;
+    /*----GRID Implicito(para elementos no definidos)----*/
+    grid-auto-rows: 200px;
+    /*Las filas que se creen automaticamente agregando mas elemento mediran el valor indicado (200px)*/
+    grid-auto-flow: column;
+    /*Por defecto ROW*/
+    /*Column: cambia el sentido de los ejes, ahora los nuevos elementos se crearan en columnas nuevas */
+    /*Dense: trata de rellenar los espacios en blanco en la cuadricula*/
+    grid-auto-columns: 400px;
+    /*Las columnas que se creen automaticamente agregando mas elemento mediran el valor indicado (400px)*/
+}
+
+.grid-item1 {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

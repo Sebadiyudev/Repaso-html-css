@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*----AUTO----*/
+.grid-auto {
+    display: grid;
+    grid-template-columns: auto auto 300px;
+    /*el valor auto se asegura que todo el contenido de cada hijo entre (tiene en cuenta el contenido minimo), despues los espacios sobrantes los distribuye por igual entre cada elemento con el valor auto*/
+    grid-template-rows: 100px 200px;
+}
+
+.grid-item1 {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.grid-item:first-child {
+    width: 100px;
+}
+
+/*----FR----*/
+
+.grid-fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    /*el valor fraccion(fr) distribuye los espacios de igual manera, mientras que el contenido quepa(si el contenido de una celda es mas grande el resto, se expande y los espacios se distribuyen entre las restantes)*/
+    /*Cuando usamos los valores fr dividimos el espacio total en fragmentos y designamos cada uno segun el valor indicado */
+    grid-template-rows: auto auto;
+}
+.grid-item2 {
+    background-color: #a22;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

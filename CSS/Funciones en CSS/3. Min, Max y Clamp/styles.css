@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(235, 233, 196);
+    padding: 20px;
+    width: 500px;
+    border: 2px solid #000;
+    margin: auto;
+    font-size: 20px;
+    width: min(600px, 100%);
+    /*La funcion MIN compara y devuelve el valor mas chico*/
+    width: max(900px, 100%, 15cm);
+    /*La Funcion MAX compara y se queda con el valor maximo*/
+    width: clamp(600px, 100%, 1300px);
+    /*La funcion CLAMP Permite indicar tres valores, un minimo, un valor ideal o medio y un maximo*/
+}
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    /*El tamaño de la tipografia se achica porque la unidad REM se basa en el font-size del root(16px)*/
+}
+
+.box p {
+    text-align: justify;
+    font-size: 1.2em;
+    /*La unidad em se basa en el font-size de la caja padre (.box 20px),
+    Entonces tendria 40px*/
+    font-size: clamp(1.5rem, 2.5vw, 5rem);
+    /*Lo usual seria establecer un MIN y un MAX con medidas Absolutas y como valor media o ideal medidas relativas asi se ajustan*/
+}

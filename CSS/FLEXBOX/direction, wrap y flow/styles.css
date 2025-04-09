@@ -1,0 +1,39 @@
+div,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.flexbox {
+    margin: 20px;
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: row;
+
+    /*ROW fila de izquierda a derecha, por defecto
+    ROW-REVERSE cambia el sentido de la fila
+    COLUMN cambia el flujo, de arriba a abajo 
+    COLUMN-REVERSE cambia el flujo, de abajo a arriba*/
+    flex-wrap: wrap;
+    /*NOWRAP por defecto, no permite salto de linea de los elementos
+    WRAP permite salto de linea de los elementos manteniendo su tamaño 
+    WRAP-REVERSE el salto de linea pero en direccion opuesta*/
+    flex-flow: row wrap;
+    /*Indica el flujo de los items, contiene los valores de DIRECTION y WRAP*/
+}
+.flex-item {
+    width: 180px;
+
+    background-color: rgb(228, 8, 8);
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item.flex-item:first-child {
+    background-color: rgb(69, 94, 175);
+}
+.flex-item.flex-item:last-child {
+    background-color: rgb(59, 206, 78);
+}

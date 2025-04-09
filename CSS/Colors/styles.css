@@ -1,0 +1,21 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #a77; /*COLORES HEXADECIMAL(va del 00 al ff para cada valor)*/
+    text-align: center;
+    color: #a00;
+    font-weight: bold;
+    padding: 20px 50px;
+}
+.box1 {
+    width: 100px;
+    padding: 20px 50px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: rgb(164, 205, 223);
+    /*COLORES RGB (va del 00 al 255 para cada valor)*/
+    text-align: center;
+    font-weight: bold;
+    color: rgb(40, 112, 125);
+}

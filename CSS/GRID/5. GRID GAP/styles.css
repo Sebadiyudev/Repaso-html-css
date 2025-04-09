@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+}
+
+.grid-gap {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    column-gap: 15px;
+    row-gap: 20px;
+    /*shorthand*/
+    gap: 20px 15px;
+    /*GAP para separacion entre elementos*/
+}
+
+.grid-item1 {
+    background-color: #48e;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.grid-gap_padding {
+    background-color: white;
+    border: 3px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    column-gap: 15px;
+    row-gap: 20px;
+    /*shorthand*/
+    gap: 20px 15px;
+    /*GAP para separacion entre elementos*/
+    padding: 20px;
+    /*Padding solo si es necesario para separar elementos de los bordes del contenedor */
+}
+
+.grid-item2 {
+    background-color: #a22;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
