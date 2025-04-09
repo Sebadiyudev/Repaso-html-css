@@ -1,0 +1,17 @@
+@media print {
+    body {
+        font-size: 24pt;
+    }
+}
+/*PRINT: condicion para que se apliquen los estilos*/
+/*Cambia para dispositivos de impresion*/
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 20px;
+        background-color: black;
+        color: white;
+    }
+}
+/*SCREEN: condicion para que se apliquen los estilos*/
+/*Cambia para dispositivos de visualizacion(pantallas)*/

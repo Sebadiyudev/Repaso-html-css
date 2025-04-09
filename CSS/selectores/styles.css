@@ -1,0 +1,14 @@
+li {
+    color: grey;
+}
+/*Selector por nombre*/
+
+.ingrediente-faltante {
+    color: red;
+}
+/*Selector por clase*/
+
+#ingrediente-secreto {
+    color: blue;
+}
+/*Selector por ID (indentificador unico)*/

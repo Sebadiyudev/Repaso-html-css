@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+h1 {
+    text-wrap: balance; /*balance, balancea las lineas para que queden mas o menos iguales en longitud - pretty, evita que quede una palabra sola en una linea, ajustando el texto */
+}
+.box {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0009;
+    /*define como se comporta los espacios en blanco*/
+    white-space: pre; /*normal, nowrap, pre, pre-wrap */
+    text-overflow: ellipsis;
+    /*clip recorta el texto, ellipsis recorta el texto pero agrega tres puntos suspensivos*/
+    overflow: hidden;
+    word-break: break-all;
+    /*break-all las palabras se recortan en los saltos de linea, keep-all no se cortan, auto-phrase*/
+    overflow-wrap: break-word;
+    /*break-word divide las palabras por silabas, anywhere las palabras largas se van a romper si se desbordan */
+}

@@ -1,0 +1,62 @@
+/*----SELECTORES por atributo----*/
+
+img[src="img.png"] {
+    width: 100%;
+}
+/*Por atributo "src" especificando archivo enlazado en particular*/
+
+img[src$="png"] {
+    width: 10%;
+}
+/*Por atributo "src" y $ indica todos los archivos del mismo formato, el signo $ indica como termina el nombre*/
+
+img[src^="img"] {
+    width: 50%;
+}
+/*Por atributo src y ^ el acento circunflejo (se teclea con AltGr y apertura de llaves) indica como empieza el nombre*/
+
+/*----SELECTORES en forma descendente----*/
+
+ul li {
+    color: red;
+}
+
+/*las tag li que no esten dentro de un ul no se veran afectadas*/
+
+ul strong {
+    color: blue;
+}
+/*Este caso strong no es hijo directo de ul (ul>li>strong)*/
+
+ul > li > strong {
+    width: blue;
+}
+/*De esta forma si se especifica la herencia*/
+
+/*----SELECTORES de Hermanos Adyacentes----*/
+
+h1 + p {
+    color: rgb(150, 82, 45);
+}
+/*De esta forma indico que vamos a darle estilos a un p que este inmediatamente despues de un h1 (hermanos directos)(SE ESTILIZA EL PRIMER PARRAFO)*/
+
+h1 + p + p {
+    color: rgb(150, 82, 45);
+}
+/*(SE ESTILIZA EL SEGUNDO PARRAFO)*/
+
+/*----SELECTORES de Hermanos Generales----*/
+h1 ~ p {
+    color: rgb(150, 82, 45);
+}
+
+/*Usando la virgulilla le damos estilos a todos los p que esten despues de un h1, independientemente si hay elementos intermedios*/
+
+/*----SELECTORES por multiples elementos----*/
+
+h1,
+p {
+    text-align: center;
+}
+
+/*Separando los selectores con coma podemos estilizar diferentes elementos */

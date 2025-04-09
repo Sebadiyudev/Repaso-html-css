@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,
+body {
+    box-sizing: border-box;
+}
+
+div {
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    /*Para que se achique para dispositivos moviles y no crezca y se pixele para desktop*/
+    width: auto;
+    height: auto;
+}
+.video__container {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    /*aspect-ratio para que los videos mantengan la relacion/aspecto sin necesidad de utilizar margins paddings ni heights*/
+    /*Aspect-ratio tambien aplica para las etiquetas iframe*/
+}
+video {
+    width: 100%;
+    /*podemos darle width para que se agrande y ocupe toda la ventana o max-width para que se agrande hasta su resolucion original solamente*/
+}

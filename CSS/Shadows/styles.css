@@ -1,0 +1,42 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.box {
+    width: 300px;
+    height: auto;
+    border: 3px solid black;
+    margin: 20px auto;
+    background-color: antiquewhite;
+    box-shadow: 0 0 50px 0 #0007;
+    /*Primer parametro sombra eje horizontal, segundo, eje vertical,tercero es desefoque, cuarto la extension y quinto color */
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #333;
+    text-shadow: 0 0 10px rgb(63, 136, 75);
+}
+
+p {
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: justify;
+    text-shadow: 0 0 5px rgb(63, 136, 75)
+        /*NO TIENE CUARTO PARAMETRO (EXPANSION)*/;
+}
+img {
+    width: 190px;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 10px #a22);
+    /*FILTER DROP SHADOW SIRVE PARA OBJETOS CON TRANSPARENCIA (COMO LAS IMAGENES PNG), TAMPOCO PERMITE CUARTO VALOR*/
+}

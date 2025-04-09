@@ -1,0 +1,12 @@
+@media screen and (max-width: 800px) {
+    aside:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+}
+/*Para creacion de pagina primero para escritorio (desktop first) usamos max-width porque le decimos que si la resolucion es mas chica 480px por ejemplo, le damos estilos para mobile, o menor a 780 a tablet */

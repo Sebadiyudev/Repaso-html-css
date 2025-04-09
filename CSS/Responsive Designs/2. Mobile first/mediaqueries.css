@@ -1,0 +1,13 @@
+@media screen and (min-width: 480px) {
+    .main-wrapper {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    aside:last-child {
+        display: block;
+    }
+}
+
+/*Para mobile first usamos min-width,si supera la medida indicada 480px por ejemplo le damos estilo para tablet o desktop */

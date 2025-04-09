@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    container-type: inline-size;
+    container-name: main;
+    /*NORMAL: no se considera querie container*/
+    /*INLINE-SIZE: condiciona las propiedades que le vamos a dar por su ancho (osea en linea) */
+    /*SIZE: tiene en cuanta todas en bloque y en linea */
+    /*Si quiero volver un elemento especifico un container-querie, se le puede indicar el nombre*/
+}
+p {
+    font-size: 8px;
+}
+
+@container main (max-width:600px) {
+    p {
+        font-size: 20px;
+        color: red;
+        background-color: #000;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #f22;
+    margin-top: 50px;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    color: red;
+    position: relative;
+    left: 0;
+}
+/*Shorthand Transition (Property, duration, timing-function, delay)*/
+/*La propiedad a modificar y el tiempo de duracion son obligatorias para que funcione, las otras dos son opcionales*/
+
+body:hover .box {
+    background-color: blue;
+    left: 400px;
+}

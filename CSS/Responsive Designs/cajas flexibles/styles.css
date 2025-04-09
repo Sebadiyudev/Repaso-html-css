@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.bloque {
+    display: inline-block;
+    min-width: 200px;
+    /* max-width: 300px; */
+    flex-grow: 1;
+    flex-basis: 0;
+    /*O TAMBIEN SE PUEDE PONER SOLO FLEX: 1*/
+    background-color: #7bf;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px;
+}
