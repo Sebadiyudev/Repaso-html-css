@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    width: 50svw;
+    height: 100vh;
+    border: 2px solid #000;
+    margin: auto;
+    text-align: justify;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /*behavior cambia el movimiento de la barra de desplazamiento, SMOOTH hace que el desplazamiento sea mas suave y fluido*/
+    scrollbar-color: #c97878 #fff;
+    /*Permite cambiar el color de la barra y del track*/
+    /*Primer valor es la barra, el segundo el trak */
+    scrollbar-width: thin;
+    /*Recibe tres valores, AUTO: Por defecto. THIN: Una barra mas fina y NONE: Desaparece visualmente la barra pero se puede seguir haciendo scroll con el mouse o tactil*/
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,155 @@
+:root {
+    color: blue;
+}
+/*Selecciona el elemento raiz*/
+
+* {
+    font-size: 20px;
+}
+
+/*----PSEUDOCLASES----*/
+
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+h1:hover {
+    color: #000;
+    background-color: #ccc;
+}
+/*:hover cuando pase el puntero por encima del elemento*/
+
+h1:active {
+    background-color: #48e;
+    color: white;
+}
+/*:active adquiere las propiedades cuando se este clickeando sobre el elemento*/
+
+li:first-child {
+    color: red;
+}
+/*selecciona el primer li*/
+
+li:last-child {
+    color: #48e;
+}
+/*selecciona el ultimo li*/
+
+li:nth-child(2) {
+    color: orange;
+}
+/*selecciona elemento enesimo n(4)*/
+
+li:nth-child(3n) {
+    color: violet;
+}
+
+/*si agregamos n en el valor toma por rangos indicados (3) y aplica el estilo cada tres elementos*/
+
+li:nth-of-type(2) {
+    color: aquamarine;
+    /*selecciona el segundo li sin tener en cuenta el elemento random en el medio*/
+}
+li:nth-child(2) {
+    color: rgb(180, 186, 68);
+}
+/*tiene en cuenta el elemento random pero no lo modifica porque no es un li*/
+
+.lista li {
+    color: #a22;
+}
+
+.lista li:not(.excluido) {
+    color: rgb(26, 150, 28);
+}
+/*:not(.class) permite seleccionar diversos elementos y excluir los indicados */
+
+div:empty {
+    background-color: #ccc;
+    padding: 30px;
+    border: none;
+}
+/*:empty selecciona a los elementos que estan vacios y los estiliza, si contiene algo (aunque sea un espacio) ya no funciona*/
+
+input[type="checkbox"] {
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked {
+    transform: scale(2);
+}
+
+/*:checked modifica el input si el checkbox esta seleccionado*/
+
+a:link {
+    color: red;
+}
+/*:link cuando el enlace no fue visitado*/
+
+a:visited {
+    color: green;
+}
+
+/*:visited cuando el enlace ya fue visitado*/
+
+input:valid {
+    color: green;
+}
+/*cuando el input es valido*/
+
+input:invalid {
+    color: red;
+}
+/*cuando el input es invalido*/
+
+/*----IS, WHERE AND HAS----*/
+
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: violet;
+}
+
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: #48e;
+}
+/*:is permite agrupar selectores separados en diferentes rangos o cajas contenedoras*/
+
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: red;
+}
+
+/*:where funciona igual pero la especificidad cambia, is la mantiene*/
+
+section:has(.elemento1) {
+    background-color: black;
+    color: white;
+}
+
+/*:has en caso que section contenga un elemento1, se aplican los estilos, sino no*/
+
+ul + div {
+    background-color: #a22;
+}
+/*De esta manera se modifica el div*/
+
+ul:has(+ div) {
+    background-color: #48e;
+}
+
+/*De esta manera se puede modificar el ul*/
+/*Ambas cumplen la misma condicion, de que el este inmediatamente despues del ul*/
+
+label {
+    font-weight: 600;
+}
+label:has(input:valid) {
+    color: green;
+}
+
+label:has(input:invalid) {
+    color: red;
+}
+/*De estas manera se pueden combinar los diferentes pseudoclases para que el que reciba los cambios sea el elemento padre, label*/

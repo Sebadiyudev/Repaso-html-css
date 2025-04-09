@@ -1,0 +1,21 @@
+p {
+    color: red;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic, oblique, normal;
+    text-align: left, center, right, justify, start, end;
+    text-decoration: underline, overline, line-through; /*por defecto None*/
+    line-height: 2; /*interlineado(tamaño de la linea)*/
+    letter-spacing: 2px; /*espacio entre letras*/
+    text-transform: uppercase, lowercase, capitalize, full-width; /*Por defecto None*/
+    text-shadow: none;
+    word-wrap: break-word; /*corta la linea por palabras*/
+    word-break: break-all; /*corta la linea por letras*/
+}
+
+strong {
+    font-weight: 700;
+    /*font-weight: bold(peso de 700)*/
+    /*font-weight: bolder (siguiente a 700)*/
+}

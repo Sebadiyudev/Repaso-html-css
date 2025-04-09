@@ -1,0 +1,38 @@
+.formulario {
+    background: red;
+    /* padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-left: 20px; */
+    /*Orden de las agujas de reloj ARRIBA DERECHA ABAJO IZQUIERDA*/
+    padding: 30px;
+}
+
+.formulario_input {
+    padding: 6px 10px;
+    width: 100%;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px; */
+    /*PRIMERO SE DEFINE VERTICAL, DESPUES HORIZONTAL*/
+}
+
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: rgb(47, 125, 107);
+    color: white;
+    width: 50%;
+}
+
+.box {
+    background-color: rgb(195, 165, 129);
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+
+.box_grande {
+    margin: 50px;
+}

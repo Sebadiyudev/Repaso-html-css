@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #ccc;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    color: #fff;
+    position: relative;
+    z-index: 30;
+} /*Relative, mantiene su espacio original respecto a los otros elementos, pero se puede desplazar visualmente en la pag*/
+/*Se adquieren 4 propiedades top, left, right y bottom*/
+
+.box--blue {
+    background-color: blue;
+    bottom: 50px;
+    left: 50px;
+    /*top y left tienen prioridad sobre right y bottom*/
+    bottom: 70px;
+    right: 50px;
+    z-index: 20;
+}
+.box--red {
+    background-color: red;
+    bottom: 170px;
+    left: 70px;
+    z-index: 10;
+}
+/*Cuando le damos un valor a la Propiedad Position, se adquiere una nueva propiedad, z-index*/

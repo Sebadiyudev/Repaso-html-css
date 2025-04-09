@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+.box {
+    width: 200px;
+    height: 120px;
+    /*Si defino la propiedad height la altura de la caja se fija y el contenido se desborda*/
+    background-color: white;
+    position: relative;
+    left: 0;
+    border: 2px solid #0009;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+    /*visible, hidden, scroll, auto, clip*/
+}

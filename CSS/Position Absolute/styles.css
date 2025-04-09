@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+    font-family: sans-serif sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 2px solid #000;
+    background-color: white;
+    position: relative;
+
+    margin: 20px;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(228, 148, 36);
+    color: white;
+}
+
+.box--blue {
+    opacity: 0.5;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+/*las cajas posicionadas crean un contexto de apilamiento y se superponen segun lo indicado*/
+/*cuando le damos el valor absolute, no ocupa lugar en la pag, no reserva su espacio respecto a los otros elementos, su punto de referencia ahora es el vertice de la pag, no su posicionamiento*/
+/*Para que su punto de referencia sea su contenedor, hay que darle el valor relative a su elemento padre.*/
+
+.box--red {
+    background-color: red;
+    opacity: 0.5;
+}

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.contenedor {
+    padding: 50px;
+    background-color: blue;
+    position: relative;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: fixed;
+    right: 0;
+}
+/*Position Fixed se comporta como absolute pero su punto de referencia siempre es la ventana, no importa si el contenedor padre tiene posicion relativa*/
+
+.first {
+    position: sticky;
+    top: 20px;
+}
+
+.last {
+    position: sticky;
+    top: 140px;
+}
+
+.last2 {
+    position: sticky;
+    top: 260px;
+}
+
+/*Position sticky se comporta como relative hasta que el scroll llegue a la posicion indicada, y empieza a comportarse como fixed*/

@@ -1,0 +1,46 @@
+/*PSEUDOELEMENTOS*/
+div {
+    padding: 20px;
+}
+
+h1::first-letter {
+    color: red;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+/*Selecciona la Primer letra del elemento*/
+
+div::first-line {
+    color: red;
+    font-weight: bold;
+}
+/*Selecciona la primer linea del elemento*/
+
+div::selection {
+    background-color: red;
+    color: white;
+}
+/*Cambia las propiedades de los elementos seleccionados (Como el texto)*/
+
+input::placeholder {
+    color: green;
+    background-color: black;
+}
+/*Modifica los placeholders seleccionados*/
+
+li::marker {
+    color: red;
+}
+/*Aplica estilos a los indicadores de elementos Li*/
+
+li::before {
+    content: "Elemento: ";
+    color: red;
+}
+/*Permite agregar elementos al comienzo que se visualizan en el navegador pero no se pueden seleccionar y no se muestran en el inspeccionador*/
+
+li::after {
+    content: " Despues";
+    color: blue;
+}
+/*Permite agregar elementos al final que se visualizan en el navegador pero no se pueden seleccionar y no se muestran en el inspeccionador*/
