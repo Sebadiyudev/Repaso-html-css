@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(80, 80, 80);
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+.box {
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+
+    background-image: url(https://scontent.fcnq2-1.fna.fbcdn.net/v/t1.6435-9/199385759_345470910277839_3988273979229903886_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHeqMUtD36EbbGohlHDBu1y_R1YrUnrs9b9HVitSeuz1tqHJM_RVGJw9_q6giHZSASGRv6OC-sk2WrIsqFYhBc8&_nc_ohc=7ojqZ_YCpasQ7kNvgFcMTEu&_nc_oc=AdgJTmaeGOS9hyIY8lPiDuNPtW6w6ZbEI0cDcPFMNoKTFF3rVeXPaE8M9fO2r8xSr_0&_nc_zt=23&_nc_ht=scontent.fcnq2-1.fna&_nc_gid=AtJJ8leiq0ILhWx1o5ksX3S&oh=00_AYCZIEVdaE-88yHXxbpC9jLwyaADJAaMHb_yYnXyyLUyTw&oe=67E867CF);
+    background-position: center; /*top, bottom, left, right, center*/
+    background-size: contain;
+    /*auto: mantiene la imagen del mismo tamaño*/
+    /*100%: adapta el ancho de la imagen a la caja*/
+    /*contain: fuerza al navegador a mostrar al menos una vez la imagen completa */
+    /*cover: se adapta a la resolucion de la caja, sin importar el tamaño*/
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Permite anclar a la imagen de fondo en una posicion mientras se scrollea*/
+    background-color: rgba(196, 44, 44, 0.6);
+
+    background: url(https://scontent.fcnq2-1.fna.fbcdn.net/v/t1.6435-9/199385759_345470910277839_3988273979229903886_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHeqMUtD36EbbGohlHDBu1y_R1YrUnrs9b9HVitSeuz1tqHJM_RVGJw9_q6giHZSASGRv6OC-sk2WrIsqFYhBc8&_nc_ohc=7ojqZ_YCpasQ7kNvgFcMTEu&_nc_oc=AdgJTmaeGOS9hyIY8lPiDuNPtW6w6ZbEI0cDcPFMNoKTFF3rVeXPaE8M9fO2r8xSr_0&_nc_zt=23&_nc_ht=scontent.fcnq2-1.fna&_nc_gid=AtJJ8leiq0ILhWx1o5ksX3S&oh=00_AYCZIEVdaE-88yHXxbpC9jLwyaADJAaMHb_yYnXyyLUyTw&oe=67E867CF)
+        center / cover fixed rgba(196, 44, 44, 0.6); /*URL img, position, size, repeat, attachment, color */
+}
+
+.opaco {
+    width: 100%;
+    height: 100%;
+    background-color: #0000009b;
+}

@@ -1,0 +1,35 @@
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+/*si la especificidad es la misma, se aplican los estilos en cascada (osea en orden, el ultimo sobreescribe a los anteriores)*/
+
+.titulo {
+    color: green;
+}
+h2 {
+    color: red;
+}
+
+/*el selector por clase es mas especifico por eso tiene mas peso y no se aplica en cascada*/
+
+#subtitulo {
+    color: orange;
+}
+.subtitulo {
+    color: red;
+}
+h3 {
+    color: #000;
+}
+
+/*el id es mas especifico que los selectores por clases o elementos*/
+
+/*Despues sigue la etiqueta <style></style>*/
+
+/*Seguido los atributos style{} dentro de las etiquetas*/
+
+/*y por ultimo !important*/

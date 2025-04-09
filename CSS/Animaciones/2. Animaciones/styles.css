@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    margin: 20px;
+    background-color: #fff;
+    padding: 6px;
+    border: 4px solid #48e;
+    border-radius: 39px;
+    transition: border 1s steps(24);
+}
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-duration: 3s;
+    /*Nombre de la animacion, necesita por lo menos dos parametros para que funcione, nombre y duracion*/
+    animation-delay: 3s;
+    /*tiempo de retraso para que se active, puede recibir valores negativos tmb*/
+    animation-fill-mode: both;
+    /*fill-mode: estado en el que queda el elemento despues de la animacion BACKWARDS: Como al inicio de la animacion BOTH. valor mas utilizado, FORWARDS  */
+    animation-timing-function: linear; /*Para que sea lineal, sino comienza rapido y termina lento*/
+    animation-iteration-count: 3; /*INFINITE: bucle infinito para que se repita, si tiene delay solo funciona la primera vez, despues ya es automatica*/
+    /*Tambien puede recibir valores numericos para indicar cuantas veces quiera*/ /* Valor 1 por defecto */
+    animation-direction: alternate;
+    /*indica la direccion de la animacion. Normal - Reverse - Alternate(Alterna entre from y to las veces indicadas en iteration-count)*/
+}
+
+.barra:active {
+    animation-play-state: paused;
+    /*Por defecto RUNNING, Valor Paused permite pausar la animacion*/
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 00%;
+        background-color: #f33;
+    }
+    to {
+        width: 100%;
+    }
+}
+/*keyframes seguido del nombre que tendra la animacion*/
+/*from: donde comienza, to: donde termina. Tambien pueden ser 0% a 100% con pasos intermedios tambien*/

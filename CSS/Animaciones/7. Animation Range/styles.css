@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    height: 200px;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    animation-range-start: cover 20%;
+    animation-range-end: contain 50%;
+    /*Cover: Cuando el elemento animado sea visible en la pantalla, independientemente si se ve completo o no*/
+    /*Contain: El elemento se anima cuando se visualice completamente*/
+    /*Los porcentajes indican cuando comienza y cuando termina el scroll del viewport (ej 50% comienza a mitad de pantalla)*/
+}
+
+@keyframes llenar-barra {
+    from {
+        opacity: 0;
+        box-shadow: 0 0 20px #48e;
+    }
+    to {
+        opacity: 1;
+        background-color: #f33;
+        box-shadow: 0 0 50px #f33;
+    }
+}

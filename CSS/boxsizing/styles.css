@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+.box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+.box-default {
+    box-sizing: content-box; /*EL TAMAÑO DE LA CAJA SE AJUSTA DESDE CONTENIDO*/
+    border: 5px solid black;
+    padding: 20px;
+}
+.box-new {
+    box-sizing: border-box; /*EL TAMAÑO DE LA CAJA SE AJUSTA DESDE EL BORDE*/
+    border: 5px solid black;
+    padding: 20px;
+}
